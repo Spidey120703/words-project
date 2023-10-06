@@ -1,18 +1,26 @@
-# Vue 3 + TypeScript + Vite
+# 单词助记辅助系统
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> 本项目，灵感来自“不背单词”、“有道词典”等网站。
 
-## Recommended IDE Setup
+此项目技术上由Vue 3和Vite构建，采用Element Plus组件库。\
+用于记忆和检索单词的一个轻量级网站。
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 预览
 
-## Type Support For `.vue` Imports in TS
+目前有个预览页面，但可能不是最新版。\
+[网页预览](https://spidey120703.github.io/projects/words-project)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## 介绍
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+本项目目前暂无后台，纯前端的一个轻量级网页。\
+本人第一次接触Vue 3和Vite，以及Element Plus组件库，受限于本人的技术水平，内部的代码可能会很乱，许多效果是通过原生JavaScript实现的。\
+顺带一提，本项目没有多少注释，本人没有注释的习惯，以后会改的。
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## 构建
+
+<b>提示：</b>构建完成后请复制`./src/assets/background`和`./src/assets/data`两个文件至`./dist/assets`下。
+```bat
+mkdir ".\dist\assets\data" ".\dist\assets\background"
+copy ".\src\assets\data\*" ".\dist\assets\data\"
+copy ".\src\assets\background\*" ".\dist\assets\background\"
+```
